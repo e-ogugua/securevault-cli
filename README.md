@@ -1,38 +1,44 @@
-# React + TypeScript + Vite
+# SecureVault CLI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-19.1.1-blue.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue.svg)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0.0-38B2AC.svg)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF.svg)](https://vitejs.dev/)
 
-Currently, two official plugins are available:
+A secure, trust-driven password and secrets manager with both CLI and web dashboard interfaces. Built with modern security practices and a focus on user trust and data protection.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+### 🔐 **Advanced Security**
+- AES-256 encryption for all stored data
+- Zero-knowledge architecture - your master password never leaves your device
+- Secure password generation with customizable complexity
+- Password strength analysis and security scoring
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🛡️ **Trust-Driven Design**
+- Minimal, professional UI with muted blues and greys
+- Clear security indicators and trust signals
+- Transparent security practices and open source code
+- No telemetry or data collection
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📊 **Security Intelligence**
+- Real-time security score calculation
+- Weak password detection and alerts
+- Duplicate password identification
+- Password breach monitoring (optional)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 🌙 **Modern User Experience**
+- Beautiful dark/light mode with system preference detection
+- Responsive design optimized for desktop and mobile
+- Smooth animations and micro-interactions
+- Intuitive vault organization and search
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
+### 🔧 **Powerful Management**
+- Multiple entry types: logins, secure notes, credit cards, identities
+- Advanced search and filtering capabilities
+- Bulk operations and data export/import
+- Secure sharing and team collaboration (roadmap)
       // other options...
     },
   },
