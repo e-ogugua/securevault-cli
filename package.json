@@ -3,7 +3,14 @@
   "private": false,
   "version": "1.0.0",
   "description": "A secure password and secrets manager with CLI and web dashboard",
-  "keywords": ["password-manager", "secrets", "security", "cli", "encryption", "vault"],
+  "keywords": [
+    "password-manager",
+    "secrets",
+    "security",
+    "cli",
+    "encryption",
+    "vault"
+  ],
   "author": "Emmanuel Ogugua <emmachuka@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -19,11 +26,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "axios": "^1.11.0",
+    "framer-motion": "^10.18.0",
     "lucide-react": "^0.263.1",
-    "framer-motion": "^10.16.4",
-    "axios": "^1.5.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
