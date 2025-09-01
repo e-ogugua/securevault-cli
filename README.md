@@ -1,13 +1,16 @@
-# SecureVault CLI
+# 🔐 SecureVault CLI
 
+**Zero-knowledge password manager with advanced security and trust-driven design**
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20Now-brightgreen)](https://securevault-cli.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/e-ogugua/securevault-cli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![React](https://img.shields.io/badge/React-19.1.1-blue.svg)](https://reactjs.org/)
-🚀 **Live Demo**: [https://securevault-9722bzxhw-emmanuel-c-oguguas-projects.vercel.app](https://securevault-9722bzxhw-emmanuel-c-oguguas-projects.vercel.app)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue.svg)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0.0-38B2AC.svg)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF.svg)](https://vitejs.dev/)
 
-A secure, trust-driven password and secrets manager with both CLI and web dashboard interfaces. Built with modern security practices and a focus on user trust and data protection.
+## 🚀 Live Demo
+
+**🌐 [Try SecureVault CLI](https://securevault-cli.vercel.app)**
+
+*Your master password never leaves your device. All encryption happens client-side.*
 
 ## ✨ Key Features
 
@@ -40,37 +43,126 @@ A secure, trust-driven password and secrets manager with both CLI and web dashbo
 - Advanced search and filtering capabilities
 - Bulk operations and data export/import
 - Secure sharing and team collaboration (roadmap)
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS, Framer Motion
+- **UI Components**: Radix UI, Lucide Icons
+- **Encryption**: Web Crypto API, AES-256-GCM
+- **Storage**: IndexedDB with encryption layer
+- **Build Tool**: Vite with Hot Module Replacement
+- **Deployment**: Vercel
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/e-ogugua/securevault-cli.git
+   cd securevault-cli
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 📁 Project Structure
+
+```
+securevault-cli/
+├── src/
+│   ├── components/     # UI components
+│   ├── lib/           # Crypto utilities and core logic
+│   ├── hooks/         # Custom React hooks
+│   ├── types/         # TypeScript definitions
+│   ├── stores/        # State management
+│   └── App.tsx        # Main application
+├── public/            # Static assets
+└── package.json       # Dependencies
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔒 Security Architecture
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Zero-Knowledge Design
+- **Client-Side Encryption**: All encryption/decryption happens in your browser
+- **Master Password**: Never transmitted or stored on servers
+- **Key Derivation**: PBKDF2 with 100,000+ iterations
+- **Encryption**: AES-256-GCM with authenticated encryption
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Security Features
+- **Password Generator**: Cryptographically secure random passwords
+- **Strength Analysis**: Real-time password security scoring
+- **Breach Detection**: Check passwords against known breaches (optional)
+- **Auto-Lock**: Automatic vault locking after inactivity
+
+## 🎯 Key Features
+
+### Vault Management
+- **Multiple Entry Types**: Passwords, secure notes, credit cards, identities
+- **Advanced Search**: Find entries quickly with fuzzy search
+- **Categories & Tags**: Organize entries with custom categories
+- **Bulk Operations**: Import/export and batch editing
+
+### Security Dashboard
+- **Security Score**: Overall vault security assessment
+- **Weak Passwords**: Identify and update vulnerable passwords
+- **Duplicate Detection**: Find and consolidate duplicate entries
+- **Breach Monitoring**: Optional breach detection service
+
+### User Experience
+- **Dark/Light Mode**: Automatic theme switching with system preference
+- **Responsive Design**: Optimized for desktop, tablet, and mobile
+- **Keyboard Shortcuts**: Power user shortcuts for common actions
+- **Offline Support**: Full functionality without internet connection
+
+## 🔐 Privacy & Trust
+
+- **No Telemetry**: Zero data collection or tracking
+- **Open Source**: Full transparency with public code
+- **Local Storage**: All data stays on your device
+- **No Registration**: Use immediately without accounts
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Emmanuel Ogugua**
+- Portfolio: [emmanuel.dev](https://e-ogugua-portfolio.vercel.app)
+- GitHub: [@e-ogugua](https://github.com/e-ogugua)
+- LinkedIn: [Emmanuel Ogugua](https://linkedin.com/in/emmanuelogugua)
+- Twitter: [@emmachuka](https://www.x.com/emmachuka)
+
+## ⚠️ Security Notice
+
+While SecureVault CLI implements industry-standard security practices, no software is 100% secure. Always:
+- Use a strong, unique master password
+- Keep your browser updated
+- Regularly backup your vault
+- Review security settings periodically
