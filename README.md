@@ -154,7 +154,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Emmanuel Ogugua**
-- Portfolio: [emmanuel.dev](https://e-ogugua-portfolio.vercel.app)
+- Portfolio: [emmanuel.dev](https://securevault-cli.vercel.app)
 - GitHub: [@e-ogugua](https://github.com/e-ogugua)
 - LinkedIn: [Emmanuel Ogugua](https://linkedin.com/in/emmanuelogugua)
 - Twitter: [@emmachuka](https://www.x.com/emmachuka)
