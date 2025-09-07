@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Security-focused color palette */
+  --vault-primary: #3b82f6;
+  --vault-secondary: #64748b;
+  --vault-accent: #0ea5e9;
+  --vault-success: #10b981;
+  --vault-warning: #f59e0b;
+  --vault-danger: #ef4444;
+  --vault-critical: #dc2626;
+  
+  /* Trust indicators */
+  --trust-high: #10b981;
+  --trust-medium: #f59e0b;
+  --trust-low: #ef4444;
+  
+  /* Background gradients */
+  --vault-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  --secure-gradient: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.dark {
+  --vault-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --secure-gradient: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Password strength indicators */
+.strength-weak {
+  @apply bg-security-critical text-white;
+}
+
+.strength-fair {
+  @apply bg-security-low text-white;
+}
+
+.strength-good {
+  @apply bg-security-medium text-white;
+}
+
+.strength-strong {
+  @apply bg-security-high text-white;
+}
+
+/* Secure input styles */
+.secure-input {
+  @apply bg-white dark:bg-vault-800 border-vault-200 dark:border-vault-700 focus:border-secure-500 focus:ring-secure-500/20;
+}
+
+/* Vault card styles */
+.vault-card {
+  @apply bg-white dark:bg-vault-800 border border-vault-200 dark:border-vault-700 rounded-xl shadow-soft;
+}
+
+/* Security badge styles */
+.security-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+/* Animation classes */
+.animate-secure-glow {
+  animation: glowSecure 2s ease-in-out infinite alternate;
+}
+
+.animate-vault-pulse {
+  animation: pulseSecure 2s infinite;
+}
